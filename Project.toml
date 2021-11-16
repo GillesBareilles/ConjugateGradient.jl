@@ -1,0 +1,9 @@
+name = "ConjugateGradient"
+uuid = "410873c1-f8f8-46a6-bf19-1d1ac773cd81"
+authors = ["Gilles Bareilles <gilles.bareilles@protonmail.com>"]
+version = "0.1.0"
+
+[deps]
+DocStringExtensions = "ffbed154-4ef7-542d-bbb7-c09d3a79fcae"
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+Printf = "de0858da-6303-5e67-8744-51eddeeeb8d7"

@@ -1,0 +1,25 @@
+#+TITLE: ConjugateGradient.jl
+
+The classical conjugate gradient algorithm, with some convenient helpers:
+- stopping criteria:
+  + norm of residual,
+  + quasi-negativity of current direction for given linear operator
+
+
+Many TODOs:
+- make things sparse allocation-wise,
+- some tests for Float64 and BigFloat data
+- callback for projecting the inner iterates on some linear space,
+- explain / examplify use with BigFloat data and matrix valued operator
+
+* Yet an other Conjugate Gradient
+* Example
+** Vector linear system
+#+begin_src julia
+
+#+end_src
+
+** Matrix linear system
+#+begin_src julia
+
+#+end_src
