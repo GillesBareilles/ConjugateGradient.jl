@@ -84,6 +84,24 @@ function solve_tCG(A!::Function, b; ν=1e-3, ϵ_residual = 1e-13, maxiter=1e5, p
 
 end
 
+
+function testCG()
+    A = [
+        0.940809  -0.464787    0.197721
+        -0.464787   0.339218   -0.0661177
+        0.197721  -0.0661177   0.919462
+    ]
+    v = [
+        -0.08499828482625181
+        0.09168943311390501
+        0.1473208137106112
+    ]
+
+    A \ v
+    u, info = solve_tCG(A, v; ν=1e-3, ϵ_residual = 1e-13, maxiter=1e5, printlev=0)
+    @show u
+end
+
 export solve_tCG
 
 end # module
